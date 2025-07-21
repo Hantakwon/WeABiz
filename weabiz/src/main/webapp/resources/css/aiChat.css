@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+body {
+	font-family: "Segoe UI", sans-serif;
+	background-color: #f7f9fc;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 30px auto;
+	background: white;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+select, textarea, button {
+	font-size: 1rem;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+
+#dept {
+	width: 200px;
+}
+
+#chat {
+	border: 1px solid #ccc;
+	padding: 10px;
+	min-height: 250px;
+	max-height: 300px;
+	overflow-y: auto;
+	background-color: #fefefe;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 6px;
+}
+
+.message {
+	margin: 10px 0;
+	padding: 10px 14px;
+	border-radius: 20px;
+	line-height: 1.5;
+	max-width: 70%;
+	word-wrap: break-word;
+	display: inline-block;
+	clear: both;
+}
+
+.message[data-role="user"] {
+	background-color: #d0ebff;
+	float: right;
+	text-align: right;
+}
+
+.message[data-role="assistant"] {
+	background-color: #e6ffe6;
+	float: left;
+	text-align: left;
+}
+
+textarea {
+	width: 100%;
+	resize: vertical;
+}
+
+button {
+	background-color: #2196f3;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #1976d2;
+}

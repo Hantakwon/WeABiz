@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+	background-color: #f9f9f9;
+	color: #333;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 30px auto;
+	padding: 20px 30px;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-form-section {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+
+/* 달력 */
+#calendar-section {
+	flex: 3;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+#calendar {
+	padding: 10px;
+	width: 100%;
+	max-height: 600px;
+	overflow-y: auto;
+	font-size: 14px;
+	margin: 0 auto;
+}
+
+/* 입력 폼 */
+.form-area {
+	flex: 1;
+	padding: 20px;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-title {
+	font-size: 20px;
+	font-weight: bold;
+	color: #dc3545;
+	margin-bottom: 14px;
+}
+
+.form-area form {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.form-area label {
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.form-area input,
+.form-area button {
+	padding: 10px;
+	font-size: 15px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.form-area button {
+	width: 100%;
+	background-color: #dc3545;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.form-area button:hover {
+	background-color: #a71d2a;
+}
+
+/* 일정 테이블 */
+.table-area {
+	background-color: #f8f9fa;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.03);
+	margin-top: 20px;
+}
+
+.schedule-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+	border: 1px solid #dee2e6;
+	padding: 12px 14px;
+	font-size: 15px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.schedule-table th {
+	background-color: #f1f3f5;
+	font-weight: 600;
+}
+
+/* input 칸 확장 */
+.schedule-table input {
+	width: 100%;
+	padding: 8px 10px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+
+/* 내용 칸 넓히기 */
+.schedule-table th:nth-child(2),
+.schedule-table td:nth-child(2) {
+	width: 30%;
+}
+
+.schedule-table th:nth-child(1),
+.schedule-table td:nth-child(1) {
+	width: 20%;
+}
+
+.schedule-table th:nth-child(3),
+.schedule-table td:nth-child(3),
+.schedule-table th:nth-child(4),
+.schedule-table td:nth-child(4) {
+	width: 15%;
+}
+
+.schedule-table th:nth-child(5),
+.schedule-table td:nth-child(5),
+.schedule-table th:nth-child(6),
+.schedule-table td:nth-child(6) {
+	width: 10%;
+}
+
+/* 버튼 */
+.schedule-table button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 0 4px;
+	transition: color 0.2s ease;
+}
+
+.schedule-table button:hover {
+	color: #dc3545;
+}

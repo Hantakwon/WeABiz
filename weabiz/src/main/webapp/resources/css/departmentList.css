@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+	background-color: #f9f9f9;
+	color: #333;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 40px auto;
+	padding: 30px;
+	background-color: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+	color: #dc3545;
+	margin-bottom: 25px;
+	font-size: 24px;
+}
+
+/* 일반 링크는 영향 안 받도록 최소 스타일만 유지 */
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* 버튼처럼 보이는 링크 전용 */
+a.btn {
+	display: inline-block;
+	background-color: #dc3545;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 8px;
+	font-weight: bold;
+	font-size: 14px;
+	transition: background-color 0.3s ease;
+	margin-bottom: 20px;
+}
+
+a.btn:hover {
+	background-color: #a71d2a;
+}
+
+/* 테이블 */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+table thead {
+	background-color: #f8f9fa;
+}
+
+table th, table td {
+	border: 1px solid #dee2e6;
+	padding: 12px 14px;
+	text-align: center;
+	font-size: 14px;
+}
+
+/* 삭제 버튼 */
+button.btn.delete {
+	background-color: #dc3545;
+	color: white;
+	border: none;
+	padding: 6px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.2s ease;
+}
+
+button.btn.delete:hover {
+	background-color: #a71d2a;
+}

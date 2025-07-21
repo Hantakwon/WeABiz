@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* 공지사항 영역 */
+#notice {
+    padding: 18px 20px;
+    background-color: #fff5f5;
+    border-left: 6px solid #dc3545;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #b02a37;
+}
+
+/* TODO & Calendar 좌우 배치 */
+.main-content {
+    display: flex;
+    gap: 30px;
+}
+
+/* TODO 영역 */
+#todolist {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+/* TODO 헤더 한 줄 배치 */
+#todolist .todo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-weight: 700;
+    color: #333;
+}
+
+#todolist .todo-header h3 {
+    margin: 0;
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+#todolist .todo-header a {
+    text-decoration: none;
+    color: #dc3545;
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+#todolist .todo-header a:hover {
+    color: #a71d2a;
+}
+
+/* TODO 목록 텍스트 */
+#todolist p {
+    background-color: #fff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin: 8px 0;
+    border: 1px solid #dee2e6;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+/* Calendar 영역 */
+#calendar-container {
+    flex: 1;
+    background-color: #fff;
+    padding: 18px 20px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* FullCalendar 기본 패딩 조정 */
+#calendar {
+    padding: 5px;
+}

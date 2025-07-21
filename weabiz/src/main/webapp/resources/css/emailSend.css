@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* 메인 컨텐츠 영역 */
+.container {
+	flex: 1;
+	max-width: 1200px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 제목 */
+.container h2 {
+	color: #dc3545;
+	margin: 0;
+}
+
+/* 입력 필드 라벨 */
+.container label {
+	display: block;
+	margin: 18px 0 6px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/* 텍스트 입력창, 제목, 수신자 ID */
+.container input[type="text"], .container textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+/* 버튼 */
+.container button {
+	margin-top: 25px;
+	background-color: #dc3545;
+	color: white;
+	padding: 12px 24px;
+	font-size: 16px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.2s ease;
+}
+
+.container button:hover {
+	background-color: #c82333;
+}
+
+.error-message {
+  background-color: #ffe6e6;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}

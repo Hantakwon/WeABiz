@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+	background-color: #f4f6f9;
+}
+
+.container {
+	max-width: 600px;
+	margin: 40px auto;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.container h2 {
+	color: #dc3545;
+	margin-bottom: 24px;
+	font-size: 22px;
+}
+
+.container label {
+	display: block;
+	margin-top: 18px;
+	margin-bottom: 6px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"],
+.container input[type="date"],
+.container input[type="file"],
+.container select {
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.container button {
+	margin-top: 25px;
+	background-color: #dc3545;
+	color: white;
+	padding: 12px;
+	font-size: 16px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.2s ease;
+	width: 100%;
+}
+
+.container button:hover {
+	background-color: #c82333;
+}
+
+/* 관리 버튼 */
+.btn-edit, .btn-delete {
+	display: inline-block;
+	margin: 2px 4px;
+	padding: 6px 10px;
+	font-size: 13px;
+	border-radius: 4px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn-edit {
+	background-color: #17a2b8;
+	color: #fff;
+	border: none;
+}
+
+.btn-edit:hover {
+	background-color: #138496;
+}
+
+.btn-delete {
+	background-color: #dc3545;
+	color: #fff;
+	border: none;
+}
+
+.btn-delete:hover {
+	background-color: #c82333;
+}

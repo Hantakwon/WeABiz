@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+	background-color: #f9f9f9;
+}
+
+header {
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 30px;
+	border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+	font-weight: bold;
+	font-size: 20px;
+	color: #dc3545;
+}
+
+header .user-info {
+	font-size: 14px;
+}
+
+nav {
+	background-color: #dc3545;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.menu-toggle {
+	font-size: 24px;
+	padding: 15px;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	color: white;
+	flex-shrink: 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	position: relative;
+}
+
+nav>ul>li {
+	padding: 15px 25px;
+	cursor: pointer;
+}
+
+nav>ul>li:hover {
+	background-color: #007b3e;
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #ffffff;
+	color: #000;
+	min-width: 220px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+}
+
+.submenu li {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.submenu li:hover {
+	background-color: #f4f4f4;
+}
+
+nav li:hover .submenu {
+	display: block;
+}
+
+/* 로고 링크 스타일 강제 적용 */
+header .logo a, header .logo a:visited, header .logo a:focus, header .logo a:active
+	{
+	color: #dc3545 !important; /* 원래 로고 색 */
+	text-decoration: none !important;
+}
+
+/* 서브메뉴 링크 스타일 강제 적용 */
+.submenu a, .submenu a:visited, .submenu a:focus, .submenu a:active {
+	color: black !important; /* submenu 기본 글자색 */
+	text-decoration: none !important;
+}
+
+.submenu li {
+	border-bottom: 1px solid #eee;
+}
+
+/* 링크를 블록화하면서도 li가 커지지 않게 조정 */
+.submenu a,
+.submenu a:visited,
+.submenu a:focus,
+.submenu a:active {
+	display: block;
+	width: 100%;
+	padding: 6px 10px; /* ✅ 기존보다 살짝 줄임 */
+	color: black !important;
+	text-decoration: none !important;
+	box-sizing: border-box;
+	line-height: 1.4; /* ✅ 줄간격 조절 */
+}

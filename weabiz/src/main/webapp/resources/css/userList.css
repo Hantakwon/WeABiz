@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+	background-color: #f4f6f9;
+	color: #333;
+}
+
+/* 전체 박스 */
+.container {
+	max-width: 1200px;
+	margin: 40px auto;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 제목 */
+.title {
+	font-size: 24px;
+	font-weight: bold;
+	color: #dc3545;
+	margin-bottom: 20px;
+}
+
+/* 유저 추가 버튼 */
+.container a[href="/user/insert"] {
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 8px 16px;
+	background-color: #dc3545;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 6px;
+	transition: background-color 0.2s ease;
+}
+
+.container a[href="/user/insert"]:hover {
+	background-color: #c82333;
+}
+
+/* 테이블 스타일 */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+thead th {
+	background-color: #f1f3f5;
+	padding: 12px;
+	font-size: 14px;
+	border-bottom: 2px solid #dee2e6;
+	text-align: left;
+	white-space: nowrap;
+}
+
+tbody td {
+	padding: 12px;
+	font-size: 14px;
+	border-bottom: 1px solid #dee2e6;
+	white-space: nowrap;
+}
